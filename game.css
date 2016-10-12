@@ -1,0 +1,31 @@
+body {
+
+}
+
+h1 {
+  text-align: center;
+}
+h3 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.board-container {
+  width: 480px;
+  height: 490px;
+  background-color: grey;
+  margin: 0 auto;
+  /* for the slack logo rotate
+  transform: rotate(-0deg);
+  -webkit-transform: rotate(-0deg);
+  -moz-transform: rotate(-0deg);*/
+}
+
+.box {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  background-color: lightblue;
+  float: left;
+/*  position: absolute;*/
+}
