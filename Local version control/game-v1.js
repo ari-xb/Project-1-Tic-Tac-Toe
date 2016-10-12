@@ -7,7 +7,6 @@
 
 //varables
 var player = 1;
-var playerTurnHUD = document.getElementById('turnhud'); // displays player in turn
 //var gameBoard = []
 /*var winningCombos = [
 [ 1, 2, 3 ],
@@ -23,7 +22,7 @@ var playerTurnHUD = document.getElementById('turnhud'); // displays player in tu
 
 // f() event listener selects a box(event.target), the marks it and .push(es) it to the gameBord array, add an x or o.
 var boxes = document.getElementsByClassName('box');
-var moveCounter = 0;
+
 var markBox = function(event) {
   if (event.target.textContent === ' ') { // this first checks if a box's content is empty ' '.
 //  var event = event.target;
@@ -31,19 +30,11 @@ var markBox = function(event) {
 //    event.target.className = 'x-box';
       event.target.textContent = 'X';
       player = 0;
-      moveCounter ++;
-      playerTurnHUD.textContent = "Player 'O' has the next turn.";
-//      console.log("Player 'O' has the next turn.");
     } else if (event.target.className === 'box' && player === 0 ) {
       event.target.textContent = 'O';
       player = 1;
-      moveCounter ++;
-      playerTurnHUD.textContent = "Player 'X' has the next turn.";
-//      console.log("Player 'X' has the next turn.");
+    } //else
   // add O and switch players.
-      }
-    } else if ( moveCounter === 9 ) {
-      playerTurnHUD.textContent = "THE GAME IS OVER";
   }
 }
 addEventListener('click', markBox);

@@ -6,22 +6,28 @@ h1 {
   text-align: center;
 }
 h3 {
-  font-size: 2em;
+  font-size: 1em;
   text-align: center;
 }
-
+/*#game-wrapper {
+  height: 600px;
+  width:600px;
+  clear: both;
+}*/
 .board-container {
   width: 480px;
-  height: 490px;
+  height: 480px;
   background-color: grey;
   margin: 0 auto;
-  /* for the slack logo rotate
-  transform: rotate(-0deg);
-  -webkit-transform: rotate(-0deg);
-  -moz-transform: rotate(-0deg);*/
+  /*for the slack logo rotate -15deg
+  transform: rotate(-15deg);
+  -webkit-transform: rotate(-15deg);
+  -moz-transform: rotate(-15deg);*/
 }
 
 .box {
+  font-size: 8em;
+  text-align: center;
   width: 150px;
   height: 150px;
   margin: 5px;
