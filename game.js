@@ -21,7 +21,11 @@ var playerTurnHUD = document.getElementById('turnhud'); // displays player in tu
 ];*/
 //
 
+
+
+
 // f() event listener selects a box(event.target), the marks it and .push(es) it to the gameBord array, add an x or o.
+var boardContainer = document.getElementsByClassName('board-container')[0];
 var boxes = document.getElementsByClassName('box');
 var moveCounter = 0;
 var markBox = function(event) {
@@ -45,8 +49,39 @@ var markBox = function(event) {
     } else if ( moveCounter === 9 ) {
       playerTurnHUD.textContent = "THE GAME IS OVER";
   }
+
+  var gameboard = makeBoardArray();
+
+  checkWinner(gameboard);
+// start with rows
+
 }
-addEventListener('click', markBox);
+
+function makeBoardArray() {
+  console.log('making board');
+  var gameBoard = [];
+  for (var i = 0; i < boxes.length; i++) {
+    gameBoard.push(boxes[i].textContent);
+  }
+  console.log(gameBoard);
+  return gameBoard;
+}
+
+function checkWinner(gameboard) {
+
+}
+
+
+
+
+
+
+
+
+boardContainer.addEventListener('click', markBox);
+
+
+
 
 // add O and switch players.
 

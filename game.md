@@ -136,7 +136,7 @@ ideas:
 
  check these positions(using comparisons), then declare a winner if true, or else draw, after 9 moves, gameover!
  - need to
- - 
+ -
  player1 = !player1 to switch player1 from true to false.
 
  click event listeners
@@ -144,6 +144,8 @@ ideas:
  - on btn to switch players
  - on btn to reset board
  - on btn to input player name *optional*
+
+##how to have a line move over the winning three##
 
  optional :
   player names input?
