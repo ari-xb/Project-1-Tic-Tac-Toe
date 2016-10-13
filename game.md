@@ -117,7 +117,7 @@ ideas:
 
    needs to record/save where there is an 'X' or a 'O' on the board.
    - could use an array or nested arrays in an array. [ [1, 2, 3], [4, 5, 6], [7, 8, 9]] with it starting with empty strings oe 'e' = empty, Etc.
-    + change array value on click of corrasponding board element.
+    + change array value on click of corrisponding board element.
      - also add a class maybe to change the style of that clicked element.
     + check for winning combination, on 3rd move or after, of symbols (gen function checkForWinner Etc.)
 
@@ -134,6 +134,16 @@ ideas:
  1,5,9 [0][4][8]
  3,5,7 [2][4][6]
 
+# How to host my game on GitHub Pages
+ - create a branch of my master and call it gh-pages
+ - 'git checkout -b (name or 'gh-pages')'
+ -
+ - checkout into gh pages 'git merge master' (if you update the master)
+
+ask about:
+my else statements not working
+the ancient tic tac toe "Terni Lapilli"
+
  check these positions(using comparisons), then declare a winner if true, or else draw, after 9 moves, gameover!
  - need to
  -
@@ -146,6 +156,7 @@ ideas:
  - on btn to input player name *optional*
 
 ##how to have a line move over the winning three##
+transitions, transform-origin, to change the point of rotation.
 
  optional :
   player names input?

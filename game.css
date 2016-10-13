@@ -29,13 +29,13 @@ h3 {
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);*/
 }
-
+/* for highlighting the winning three
 .slideDown {
 }
 
 .slideUp {
 
-}
+}*/
 
 .box {
   font-size: 8em;
@@ -43,7 +43,7 @@ h3 {
   width: 150px;
   height: 150px;
   margin: 5px;
-  background-color: lightblue;
+  background-color: white;
   float: left;
 /*  position: absolute;*/
 }
