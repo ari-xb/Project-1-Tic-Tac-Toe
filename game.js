@@ -37,7 +37,7 @@ var makeBoardArray = function() {
   var gameBoard = [];
   for (var i = 0; i < boxes.length; i++) {
     gameBoard.push(boxes[i].textContent);
-  } console.log(gameBoard);
+  }
     return gameBoard;
 }
 
@@ -48,6 +48,8 @@ var checkWinner = function(gameBoard) {
         console.log("'X' is the WINNER!");
         winner = 'X';
         playerTurnHUD.textContent = "'X' is the WINNER!";
+// when the loop stops log the value of i, to determing what the winnin combo is.
+console.log(i);
         break;
       } else if (gameBoard[winningCombos[i][0]] === 'O' && gameBoard[winningCombos[i][1]] === 'O' && gameBoard[winningCombos[i][2]] === 'O') {
         console.log("'O' is the WINNER!");
