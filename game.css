@@ -4,7 +4,9 @@
 }*/
 
 body {
+  font-family: 'Lato', sans-serif;
   text-align: center;
+
 }
 
 button {
@@ -18,22 +20,26 @@ button {
 
 h1 {
   text-align: center;
+  margin: 0 auto;
 }
+
 #turnhud {
   font-size: 1em;
   text-align: center;
   margin: 0 auto;
 }
-/*#game-wrapper {
-  height: 600px;
+
+#game-wrapper {
+/*  height: 600px;
   width:600px;
-  clear: both;
-}*/
+  clear: both;*/
+}
+
 .board-container {
-  width: 480px;
-  height: 480px;
+  width: 30em;
+  height: 30em;
   background-color: grey;
-  margin: 0 auto;
+  margin: 2em auto;
   /*for the slack logo rotate -15deg
   transform: rotate(-15deg);
   -webkit-transform: rotate(-15deg);
@@ -50,10 +56,19 @@ h1 {
 .box {
   font-size: 8em;
   text-align: center;
-  width: 150px;
-  height: 150px;
-  margin: 5px;
+  width: 32%; /*150px;*/
+  height: 32%; /*150px;*/
+  margin: 0.67%;
   background-color: white;
   float: left;
 /*  position: absolute;*/
+}
+
+.box:hover {
+  background-color: #edecec;
+}
+
+footer {
+  margin: 2em;
+  color: lightgrey;
 }
