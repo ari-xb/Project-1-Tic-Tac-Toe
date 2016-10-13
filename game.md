@@ -143,6 +143,12 @@ ideas:
 ask about:
 my else statements not working
 the ancient tic tac toe "Terni Lapilli"
+- Removing pieces, but checks if they can remove that piece.
+- number of pieces X and O
+
+reset board = 
+
+Modals = like a start menu
 
  check these positions(using comparisons), then declare a winner if true, or else draw, after 9 moves, gameover!
  - need to

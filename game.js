@@ -91,6 +91,9 @@ var displayGameStatus = function() {
   } //else if ( winner === 0 )
 }
 
+var gameReset = function() {
+  
+}
 
 // add O and switch players.
 
