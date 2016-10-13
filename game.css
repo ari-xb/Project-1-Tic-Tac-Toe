@@ -4,15 +4,25 @@
 }*/
 
 body {
+  text-align: center;
+}
 
+button {
+}
+
+#start-reset {
+  margin: 1em auto;
+  text-align: center;
+  font-size: 1em;
 }
 
 h1 {
   text-align: center;
 }
-h3 {
+#turnhud {
   font-size: 1em;
   text-align: center;
+  margin: 0 auto;
 }
 /*#game-wrapper {
   height: 600px;

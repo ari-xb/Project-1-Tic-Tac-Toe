@@ -146,7 +146,7 @@ the ancient tic tac toe "Terni Lapilli"
 - Removing pieces, but checks if they can remove that piece.
 - number of pieces X and O
 
-reset board = 
+reset board =
 
 Modals = like a start menu
 
@@ -163,6 +163,13 @@ Modals = like a start menu
 
 ##how to have a line move over the winning three##
 transitions, transform-origin, to change the point of rotation.
+
+light up the backgrounds of the winning boxes, to start with.
+ - fade out the other loosing squares could also be cool.
+
+transisions
+
+
 
  optional :
   player names input?

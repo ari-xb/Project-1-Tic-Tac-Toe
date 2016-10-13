@@ -1,19 +1,8 @@
-//console.log('jQuery loaded');
-// plan the game psudo code
-// game board hardcoded for now, to test the game logic.
 
-// a way to plan out your program before coding it. It is a detailed, step-by-step description
-// of what a computer must do, expressed in plain English rather than in a programming language.
-
-//varables
 var player = 1;
 var winner = 0; // to show who has won, also to stop the game.
 var playerTurnHUD = document.getElementById('turnhud'); // displays player in turn
-/*var winningCombos = [
-  [ 1, 2, 3 ], [ 4, 5, 6 ], [ 7, 8, 9 ],
-  [ 1, 4, 7 ], [ 2, 5, 8 ], [ 3, 6, 9 ],
-  [ 1, 5, 9 ], [ 3, 5, 7 ]
-];*/
+var resetBtn = document.getElementById('start-reset');
 
 var winningCombos = [ // referring to the indexes of the gameBoard array, that need to match, then make sure they all contan an X or O
   [ 0, 1, 2 ], [ 3, 4, 5 ], [ 6, 7, 8 ],
@@ -42,8 +31,7 @@ var markBox = function(event) {
         player = 1;
         moveCounter++;
         playerTurnHUD.textContent = "Player 'X' has the next turn.";
-  //      console.log("Player 'X' has the next turn.");
-    // add O and switch players.
+
       }
     }
     var gameBoard = makeBoardArray();
@@ -58,7 +46,7 @@ var makeBoardArray = function() {
         var gameBoard = [];
         for (var i = 0; i < boxes.length; i++) {
           gameBoard.push(boxes[i].textContent);
-        } //console.log(gameBoard);
+        } console.log(gameBoard);
           return gameBoard;
 //  }
 }
@@ -91,9 +79,18 @@ var displayGameStatus = function() {
   } //else if ( winner === 0 )
 }
 
-var gameReset = function() {
-  
+var gameReset = function(event) {
+  player = 1;
+  winner = 0;
+  moveCounter = 0;
+  playerTurnHUD.textContent = "Player 'X' goes first.";
+//  clearBoxes();
+  for (var i = 0; i < boxes.length; i++) {
+    boxes[i].textContent = ' ';
+  }
 }
+
+resetBtn.addEventListener('click', gameReset);
 
 // add O and switch players.
 
