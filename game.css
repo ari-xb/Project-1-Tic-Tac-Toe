@@ -7,27 +7,45 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
   text-align: center;
-
+  width: 80%;
+  margin: 0 auto;
 }
 
 button {
+  margin; 0 auto;
+  background: pink;
+  border-radius: 20px;
+  border: solid 0.125em black;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
+}
+
+button:hover {
+  color: grey;
+  background: lightgreen;
+  border-radius: 20px;
+  border: solid 0.125em grey;
+
 }
 
 #start-reset {
-  margin: 1em auto;
+  margin: 0 auto;
   text-align: center;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 h1 {
+  font-size: 1em;
   text-align: center;
-  margin: 0 auto;
+  margin: 0.5em auto;
 }
 
 #turnhud {
-  font-size: 1em;
+  font-size: 2em;
   text-align: center;
-  margin: 0 auto;
+  margin: 0.5em auto;
+/*  transition: font 2s, width 2s, height 2s, background-color 2s, transform 2s;
+  -webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;*/
 }
 
 #game-wrapper {
@@ -62,6 +80,8 @@ h1 {
   margin: 0.67%;
   background-color: white;
   float: left;
+  transition: background-color 0.5s;
+  -webkit-transition: background-color 0.5s;
 /*  position: absolute;*/
 }
 
@@ -70,7 +90,50 @@ h1 {
 
 }
 
+.highlight {
+  background-color: red;
+}
+
 footer {
   margin: 2em;
   color: lightgrey;
 }
+
+@media (max-width: 50em) {
+  body {
+    width: 100%;
+  }
+
+  .board-container {
+    width: 40em;
+    height: 40em;
+    background-color: grey;
+    margin: 1em auto;
+    /*for the slack logo rotate -15deg
+    transform: rotate(-15deg);
+    -webkit-transform: rotate(-15deg);
+    -moz-transform: rotate(-15deg);*/
+  }
+
+  .box {
+    font-size: 10em;
+    text-align: center;
+    width: 31%; /*150px;*/
+    height: 31%; /*150px;*/
+    margin: 1.1%;
+    background-color: white;
+    float: left;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+  /*  position: absolute;*/
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #turnhud {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0.5em auto;
+  }
