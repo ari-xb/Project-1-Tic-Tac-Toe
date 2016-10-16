@@ -15,12 +15,12 @@ var winningCombos = [
 var markBox = function( event ) { // targets and adds X or O to an empty tile
   if ( winner === 0 ) {
     if ( event.target.textContent === ' ' ) { // this first checks if a box's content has no X or O.
-      if ( event.target.className === 'box' && player === 1 ) {
+      if ( /*event.target.className === 'box' &&*/ player === 1 ) {
         event.target.textContent = 'X';
         player = 2;
         moveCounter++;
         playerTurnHUD.textContent = "Player 'O' has the next turn.";
-      } else if ( event.target.className === 'box' && player === 2 ) {
+      } else if ( /*event.target.className === 'box' &&*/ player === 2 ) {
         event.target.textContent = 'O';
         player = 1;
         moveCounter++;
@@ -77,7 +77,7 @@ var gameReset = function( event ) {
   for ( var j = 0 ; j < boxes.length ; j++ ) {
   boxes[j].textContent = ' '; // the 'X' or 'O'
   document.getElementById( "box" + [j] ).className = ""; // the winboxes class.
-  document.getElementById( "box" + [j] ).className = "box";// back to class just 'box'
+  document.getElementById( "box" + [j] ).className = "box box" + [j] ;// back to class just 'box'
   }
 }
 resetBtn.addEventListener( 'click', gameReset );
