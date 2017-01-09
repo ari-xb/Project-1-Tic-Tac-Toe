@@ -1,5 +1,7 @@
 
 var player = 1; // X always Starts
+var playerX = 0; //add player scores
+var playerO = 0; //add player scores
 var winner = 0; // to show who has won, also to stop the game.
 var moveCounter = 0; // used to track the Draw condition
 var playerTurnHUD = document.getElementById( 'turnhud' ); // displays player in turn
@@ -50,6 +52,7 @@ var checkWinner = function(gameBoard) { // Displays X or O as the winner
       if ( gameBoard[winningCombos[i][0]] === 'X' && gameBoard[winningCombos[i][1]] === 'X' && gameBoard[winningCombos[i][2]] === 'X' ) {
         winner = 'X';
         playerTurnHUD.textContent = "'X' is the WINNER!";
+    //    playerX = ++; //add player scores
         highlightWinner( winBox1, winBox2, winBox3 );// improvement:
         break;
       } else if ( gameBoard[winningCombos[i][0]] === 'O' && gameBoard[winningCombos[i][1]] === 'O' && gameBoard[winningCombos[i][2]] === 'O' ) {
