@@ -1,10 +1,10 @@
-# [Tic Tac Toe](https://cloud.githubusercontent.com/assets/21230662/23775365/79f7d62a-057c-11e7-92ab-056413c389f1.png)
+# [Tic Tac Toe](https://ari-xb.github.io/Project-1-Tic-Tac-Toe/)
 
-![alt text](http://i.imgur.com/cS6QL1B.png "Tic Tac Toe")
+![alt text](https://cloud.githubusercontent.com/assets/21230662/23775365/79f7d62a-057c-11e7-92ab-056413c389f1.png "tic tac toe app screen shot")
 
-### [Slack Themed version.](https://cloud.githubusercontent.com/assets/21230662/23775376/849af1fc-057c-11e7-9974-bf0379625d7d.png)
+### [Slack Themed version.](https://ari-xb.github.io/Project-1-Slack-Themed-Tic-tac-toe/)
 
-![alt text](http://i.imgur.com/YaTJvPF.png "Slack themed TTT")
+![alt text](https://cloud.githubusercontent.com/assets/21230662/23775376/849af1fc-057c-11e7-9974-bf0379625d7d.png "Slack themed TTT")
 
 Classic Tic Tac Toe game, 'X' vs 'O', taken in turns, first to 3 wins.
 
