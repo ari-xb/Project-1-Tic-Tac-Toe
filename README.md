@@ -12,6 +12,6 @@ Classic Tic Tac Toe game, 'X' vs 'O', taken in turns, first to 3 wins.
 | :------------------------------------:|
 | Switches turns between two players. |
 | Displays which player won or if it's a draw. |
-| Highlights the winning tiles.  |
+| Highlighting of the winning tiles in red.  |
 | Ability to reset the board after or during a game.|
 | Included HTML, CSS & JavaScript files. |
