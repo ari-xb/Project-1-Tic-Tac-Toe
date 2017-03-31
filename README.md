@@ -10,7 +10,7 @@ Classic Tic Tac Toe game, 'X' vs 'O', taken in turns, first to 3 wins.
 
 | Created using native JavaScript, CSS & HTML. Started with adding the X's and O's on the game board, then how to switch players, also a lot of time was spent on checking the Win/Draw condition and outputting it correctly. The final feature I was able to add, the board reset method. |
 | :------------------------------------:|
-| Switches turns between two players. |
+| Switches turns between 2 players. |
 | Displays which player won or if it's a draw. |
 | Highlighting of the winning tiles in red.  |
 | Ability to reset the board after or during a game.|
